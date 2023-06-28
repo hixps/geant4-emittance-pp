@@ -1,0 +1,20 @@
+#
+/control/verbose 2
+/run/verbose 2
+#
+/testem/phys/addPhysics  local
+#
+#
+/run/setCut 0.25 um
+#
+/run/initialize
+#
+/testem/gun/setDefault
+/gun/particle e-
+/gun/energy 72 MeV
+#
+/analysis/setFileName Emittance_PP_experiment
+#
+/run/printProgress 50000
+#
+/run/beamOn 3000000
